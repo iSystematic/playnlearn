@@ -1,14 +1,13 @@
 <?php
-    ini_set( 'display_errors', 1 );
-    error_reporting( E_ALL );
-    $from = "hello@playnlean.ca";
-    $to = "yusra@playnlean.ca, playnlearn.winnipeg@Gmail.com";
-    $subject = "Checking PHP mail";
-    $message = "PHP mail works just fine";
-    $headers = "From:" . $from;
-    if(mail($to,$subject,$message, $headers)) {
-		echo "The email message was sent.";
-    } else {
-    	echo "The email message was not sent.";
-    }
+$to = 'playnlearn.winnipeg@Gmail.com';
+$subject = 'Marriage Proposal';
+$message = 'Hi Jane, will you marry me?'; 
+$from = 'hello@playnlearn.ca';
+ 
+// Sending email
+if(mail($to, $subject, $message)){
+    echo 'Your mail has been sent successfully.';
+} else{
+    echo 'Unable to send email. Please try again.';
+}
 ?>
