@@ -29,7 +29,7 @@ jQuery(document).ready(function ($) {
 			};
             
             //Ajax post data to server
-            $.post('/php/sendmail.php', post_data, function(response){  
+            $.post('/sendmail.php', post_data, function(response){  
 				if(response.type == 'error'){ //load json data from server and output message     
 					output = '<br><br><div class="error">'+response.text+'</div>';
 				}else{
