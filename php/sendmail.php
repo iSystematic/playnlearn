@@ -1,11 +1,12 @@
 <?php
+$user_name = 'Yusra @ PlaynLearn'
 $to = 'playnlearn.winnipeg@Gmail.com';
 $subject = 'Marriage Proposal';
-$message = 'Hi Jane, will you marry me?'; 
+$message = msg; 
 $from = 'hello@playnlearn.ca';
  
 // Sending email
-if(mail($to, $subject, $message)){
+if(mail($user_name, $to, $subject, $message)){
     echo 'Your mail has been sent successfully.';
 } else{
     echo 'Unable to send email. Please try again.';
