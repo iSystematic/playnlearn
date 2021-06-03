@@ -1,8 +1,8 @@
 <?php
     ini_set( 'display_errors', 1 );
     error_reporting( E_ALL );
-    $from = "test@hostinger-tutorials.com";
-    $to = "test@hostinger.com";
+    $from = "hello@playnlean.ca";
+    $to = "yusra@playnlean.ca, playnlearn.winnipeg@Gmail.com";
     $subject = "Checking PHP mail";
     $message = "PHP mail works just fine";
     $headers = "From:" . $from;
