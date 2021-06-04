@@ -24,6 +24,7 @@ jQuery(document).ready(function ($) {
             post_data = {
 				'user_name'		: $('input[name=name]').val(), 
 				'user_email'	: $('input[name=email]').val(), 
+				'phone_number'	: $('input[name=email]').val(), 
 				'subject'		: $('input[name=subject]').val(), 
 				'msg'			: $('textarea[name=message]').val()
 			};
