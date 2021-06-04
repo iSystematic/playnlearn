@@ -49,7 +49,7 @@ if($_POST)
     ;
 
     //proceed with PHP email.
-    $headers = 'From: '.$user_name.'' . "\r\n" .
+    $headers = 'From: no-reply@playnlearn.com' . "\r\n" .
     'Reply-To: '.$user_email.'' . "\r\n" .
     'X-Mailer: PHP/' . phpversion();
 
