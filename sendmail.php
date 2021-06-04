@@ -1,7 +1,7 @@
 <?php
 if($_POST)
 {
-    $to_email       = "playnlearn.winnipeg@Gmail.com"; //Recipient email, Replace with own email here
+    $to_email       = 'yusra@playnlearn.ca, hello#playnlearn.ca, playnlearn.winnipeg@Gmail.com'; //Recipient email, Replace with own email here
 
     //check if its an ajax request, exit if not
     if(!isset($_SERVER['HTTP_X_REQUESTED_WITH']) AND strtolower($_SERVER['HTTP_X_REQUESTED_WITH']) != 'xmlhttprequest') {
@@ -17,6 +17,7 @@ if($_POST)
     $user_name      = filter_var($_POST["user_name"], FILTER_SANITIZE_STRING);
     $user_email     = filter_var($_POST["user_email"], FILTER_SANITIZE_EMAIL);
     $phone_number   = filter_var($_POST["phone_number"], FILTER_SANITIZE_NUMBER_INT);
+    $subject        = filter_var($_POST["subject"], FILTER_SANITIZE_STRING);
     $message        = filter_var($_POST["msg"], FILTER_SANITIZE_STRING);
 
     //additional php validation
@@ -45,6 +46,7 @@ if($_POST)
     Name:".$user_name."\r\n
     Email: ".$user_email."\r\n
     Phone Number: ". $phone_number."\r\n
+    Subject:  ". $subject."\r\n
     Message:".$message
     ;
 
