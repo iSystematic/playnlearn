@@ -61,14 +61,7 @@ if($_POST)
         $output = json_encode(array('type'=>'error', 'text' => 'Could not send mail! Please check your PHP mail configuration.'));
         die($output);
     }else{
-        $output = json_encode(array('type'=>'message', 'text' => '
-
-            <div class="popup_icon"><i class="fa fa-check "></i></div>
-<div class="popup_title">Спасибо за контакт со STYX!</div>
-<div class="popup_subtitle">Мы ответим очень скоро.</div>
-
-
-'));
+        $output = json_encode(array('type'=>'message', 'text' => 'Mail Sent!'));
         die($output);
     }
 }
