@@ -1,8 +1,3 @@
-/*
-Template Name:  Alphabet
-Author: Ingrid Kuhn
-Author URI: http://themeforest.net/user/ingridk
-*/
 jQuery(function ($) {
 	
 
@@ -14,7 +9,7 @@ jQuery(function ($) {
 	var mapcanvas = document.getElementById("map-canvas");
 	if(mapcanvas){
 	  // Element exists
-		var coord = [40.738270, -74.008911]; // <--- coordinates here
+		var coord = [49.861695107448696, -97.11125064626394]; // <--- coordinates here
 
 		var map = L.map('map-canvas', { scrollWheelZoom:false}).setView(coord, 18);
 
